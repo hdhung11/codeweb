@@ -1,25 +1,145 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.34031.81
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Wep", "Wep\Wep.vbproj", "{2C902479-F503-4A7C-86A6-38F243B523E3}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2C902479-F503-4A7C-86A6-38F243B523E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C902479-F503-4A7C-86A6-38F243B523E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C902479-F503-4A7C-86A6-38F243B523E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C902479-F503-4A7C-86A6-38F243B523E3}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2A78DF50-1BD1-4AB4-BD05-4C9BC0CAAC60}
-	EndGlobalSection
-EndGlobal
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+</head>
+<body>
+    <section>Header</section>
+    <artical>
+        PRODUCT
+        <div class="KM">
+            <div class="KM-body">
+                <div class="KM-content">
+                    <img src="https://shopdunk.com/images/uploaded/BONUSt7.png" />
+                    <img src="https://shopdunk.com/images/uploaded/Bonus%20banner-26.png" />
+                    <img src="https://shopdunk.com/images/uploaded/Bonus%20banner-16.png" />
+                </div>
+            </div>
+        </div>
+        <div class="product">
+            <p><h1>Iphone</h1></p>
+            <table>
+                <tr>
+                    <td>
+                        <img src="https://shopdunk.com/images/thumbs/0007808_iphone-14-pro-max-128gb_240.png" /><br />
+                        <b id="productname">Iphone 14 Pro Max 128GB</b><br />
+                        <p id="newprice">26.150.000đ</p>
+                        <p id="oldprice">34.990.000đ</p>
+                        <p id="discount">-25%</p>
+                    </td>
+                    <td>
+                        <img src="https://shopdunk.com/images/thumbs/0008734_iphone-14-pro-128gb_240.png" /><br />
+                        <b>Iphone 14 Pro 128GB</b><br />
+                        <p id="newprice">23.890.000đ</p>
+                        <p id="oldprice">30.990.000đ</p>
+                        <p id="discount">-22%</p>
+                    </td>
+                    <td>
+                        <img src="https://shopdunk.com/images/thumbs/0020320_iphone-15-128gb_240.webp" /><br />
+                        <b>Iphone 15 128GB</b><br />
+                        <p id="newprice">26.150.000đ</p>
+                    </td>
+                    <td>
+                        <img src="https://shopdunk.com/images/thumbs/0020311_iphone-15-pro-max-256gb_240.webp" /><br />
+                        <b>Iphone 15 Pro Max 128GB</b><br />
+                        <p id="newprice">34.999.000đ</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+</body>
+</html>
+
+
+
+
+.product {
+    width: 100%;
+    height: 150px;
+}
+
+.KM img {
+    max-height: 166px;
+    max-width: 32%;
+}
+
+.KM {
+    text-align: center;
+    width: 100%;
+}
+
+.KM-content {
+}
+
+h1 {
+    text-align: center;
+}
+
+td {
+    border-spacing: 5px;
+    border-style: hidden;
+}
+
+.product img {
+    height: 250px;
+    width: 250px;
+    padding: 5px;
+}
+
+#productname {
+    font-family: Arial;
+    font-display: block;
+}
+
+#newprice {
+    color: cornflowerblue;
+    display: inline;
+    font-weight: 200;
+}
+
+#oldprice {
+    color: grey;
+    display: inline;
+    text-decoration: line-through;
+}
+
+#discount {
+    color: grey;
+    display: inline;
+}
+
+
+
+.bottommemu {
+    width: 100%;
+}
+
+#newsRegister {
+    background-color: lightgray;
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+footer {
+    background-color:black;  
+    height: 300px;
+    padding: 20px;
+    color:white;
+    text-align:left;
+    vertical-align:top;
+
+}
+#main-menu ul{
+    list-style-type:none;
+   /* display:flex;*/
+
+}
+#main-menu li {
+    display: inline;
+}
+#main-menu a {
+    text-decoration: none;
+    color:white;
+}
