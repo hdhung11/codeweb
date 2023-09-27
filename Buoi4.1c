@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thay Đổi Tài Liệu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thay Đổi Tài Liệu</h1>
+    <!-- Textbox để nhập màu nền -->
+    <label for="MauNen">Màu Nền:</label>
+    <input type="text" id="MauNen" value="#ffffff"><br>
+    
+    <!-- Textbox để nhập màu chữ -->
+    <label for="MauChu">Màu Chữ:</label>
+    <input type="text" id="MauChu" value="#000000"><br>
+    
+    <!-- Textbox để nhập tiêu đề -->
+    <label for="TieuDe">Tiêu Đề:</label>
+    <input type="text" id="TieuDe" value="Tiêu Đề Mới"><br>
+    
+    <!-- Textbox để nhập trạng thái -->
+    <label for="TrangThai">Trạng Thái:</label>
+    <input type="text" id="TrangThai" value="Trạng Thái Mới"><br>
+    
+    <!-- Nút để thay đổi tài liệu -->
+    <button onclick="thayDoiTaiLieu()">Thay Đổi</button>
+
+    <script>
+        function thayDoiTaiLieu() {
+            // Lấy giá trị từ các textbox
+            var mauNen = document.getElementById("MauNen").value;
+            var mauChu = document.getElementById("MauChu").value;
+            var tieuDe = document.getElementById("TieuDe").value;
+            var trangThai = document.getElementById("TrangThai").value;
+
+            // Thay đổi màu nền và màu chữ của trang web
+            document.body.style.backgroundColor = mauNen;
+            document.body.style.color = mauChu;
+
+            // Thay đổi tiêu đề của tài liệu
+            document.title = tieuDe;
+
+            // Thay đổi trạng thái của cửa sổ trình duyệt
+            window.status = trangThai;
+        }
+    </script>
+</body>
+</html>
