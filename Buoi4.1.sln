@@ -1,25 +1,45 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.34031.81
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Buoi4.1", "Buoi4.1\Buoi4.1.vbproj", "{F7703740-72ED-4288-81C8-26BB76484451}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F7703740-72ED-4288-81C8-26BB76484451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7703740-72ED-4288-81C8-26BB76484451}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7703740-72ED-4288-81C8-26BB76484451}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7703740-72ED-4288-81C8-26BB76484451}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E6A305FB-0B52-409D-9B13-07D53460AE31}
-	EndGlobalSection
-EndGlobal
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In các số</title>
+    <style>
+        /* Định dạng cho giao diện */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #output {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>In các số từ 1 tới giá trị:</h1>   
+    <input type="number" id="inputValue">
+    <button onclick="printNumbers()">In Số</button>   
+    <div id="output"></div>
+    <script>
+        function printNumbers() {
+        
+            var inputValue = document.getElementById("inputValue").value;
+            var output = document.getElementById("output");
+            output.innerHTML = ""; // Xóa nội dung cũ
+
+           
+            if (inputValue < 1 || inputValue > 1000) {
+                output.innerHTML = "Vui lòng nhập một giá trị hợp lệ (từ 1 đến 1000)";
+                return;
+            }
+
+           
+            for (var i = 1; i <= inputValue; i++) {
+                output.innerHTML += i + " ";
+            }
+        }
+    </script>
+</body>
+</html>
