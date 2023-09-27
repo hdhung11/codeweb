@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển đổi màu nền</title>
+    <style>
+        /* Định dạng cho giao diện */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chuyển đổi màu nền</h1>
+    <!-- Nút để chuyển đổi màu nền thành xanh -->
+    <button onclick="chuyenMauNen('blue')">Xanh</button>
+    
+    <!-- Nút để chuyển đổi màu nền thành đỏ -->
+    <button onclick="chuyenMauNen('red')">Đỏ</button>
+
+    <script>
+        function chuyenMauNen(mau) {
+            // Thay đổi màu nền của trang web
+            document.body.style.backgroundColor = mau;
+        }
+    </script>
+</body>
+</html>
