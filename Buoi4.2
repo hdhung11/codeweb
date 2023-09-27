@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng Hồ Kỹ Thuật Số</title>
+    <style>
+        /* Định dạng cho giao diện đồng hồ */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #clock {
+            font-size: 48px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Đồng Hồ Kỹ Thuật Số</h1>
+    <!-- Hiển thị đồng hồ ở đây -->
+    <div id="clock"></div>
+
+    <script>
+        function updateClock() {
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            var minutes = currentTime.getMinutes();
+            var seconds = currentTime.getSeconds();
+
+            // Định dạng thời gian để hiển thị 2 chữ số
+            if (hours < 10) {
+                hours = "0" + hours;
+            }
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+
+            // Hiển thị thời gian lên giao diện
+            var clockElement = document.getElementById("clock");
+            clockElement.innerHTML = hours + ":" + minutes + ":" + seconds;
+        }
+
+        // Cập nhật đồng hồ mỗi giây
+        setInterval(updateClock, 1000);
+
+        // Khởi chạy đồng hồ ban đầu
+        updateClock();
+    </script>
+</body>
+</html>
